@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+
+body {
+    font-family: poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: poppins, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-family: poppins, sans-serif;
+    font-size: 80px;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #899CA0;
+    text-decoration: underline;
+}
+
+em {
+    font-family: poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 30px;
+}
+
+/*///////////// 3.1 Header /////////////*/
+
+.container {
+    display: inline-flex;
+    border: 1px solid #1C2B32;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.input-field {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    width: 300px;
+    font-family: poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    background-color: transparent;
+}
+
+.input-button {
+    border: none;
+    outline: none;
+    background-color: #1C2B32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    width: 200px;
+    font-family: poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: url('assets/images/mountains.jpg');
+    background-size: cover; /* Adjusted background size */
+    background-color: transparent;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/*///////////// 3.2 Testimonial /////////////*/
+
+.testimonial-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.testimonial-container img {
+    max-width: 44px;
+    max-height: 44px;
+    border-radius: 100px;
+}
+
+.testimonial-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial-box .quote {
+    display: flex;
+    align-items: baseline; /* Vertically center the content */
+}
+
+.testimonial-box .autor {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+}
+
+.avatar {
+    margin-left: 50px;
+    margin-right: 20px
+}
+
+.quote-icon {
+    margin-right: 20px;
+}
+
+/*///////////// 3.3 Support /////////////*/
+
+.section02 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.section02 button {
+    background-color: #1C2B32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.section02 .image-callcenter {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/*///////////// 3.4 Faq /////////////*/
+
+.faq-container {
+    max-width: 1000px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.faq-answer {
+    background-color: #899CA0; /* Background color of the answer */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for the answer */
+    color: white;
+}
+
+/* Styling for when the question is clicked (folded out) */
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+/*///////////// 3.5 Footer /////////////*/
+
+footer {
+    font-size: 10px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #1C2B32;
+}
